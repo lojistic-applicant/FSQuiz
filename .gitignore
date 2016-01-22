@@ -5,5 +5,5 @@ Homestead.json
 .env
 .idea
 npm-debug.log
-public/css/*
-public/js/*
+#public/css/*
+#public/js/*
