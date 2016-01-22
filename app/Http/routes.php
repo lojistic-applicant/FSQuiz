@@ -15,18 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Opening routes
+Route::get ('/job-openings',        'JobOpenings@getJobOpenings');
+Route::get ('/job-openings/list',   'JobOpenings@listJobOpenings');
+Route::post('/job-openings/save',   'JobOpenings@saveJobOpening');
+Route::post('/job-openings/delete', 'JobOpenings@deleteJobOpening');
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
+// Applicant routes
+Route::get ('/applicants',        'Applicants@getApplicants');
+Route::get ('/applicants/list',   'Applicants@listApplicants');
+Route::post('/applicants/save',   'Applicants@saveApplicant');
+Route::post('/applicants/delete', 'Applicants@deleteApplicant');
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});

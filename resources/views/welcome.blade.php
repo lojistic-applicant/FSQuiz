@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Lojistic | Developer Challenge</title>
-    <link rel="icon" type="image/png" href="https://www.lojistic.com/favicon.png"/>
-    <link rel="shortcut icon" type="image/png" href="https://www.lojistic.com/favicon.png"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/app.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.13/vue.min.js"></script>
-</head>
-<body>
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="col-xs-12 col-sm-5 brand pull-left">
-            <b>Lojistic</b> | Developer Challenge
-        </div>
-        <div class="col-xs-12 col-sm-7 pull-right">
-            <ul class="nav nav-pills pull-right">
-                <li role="presentation"><a href="/">Instructions</a></li>
-                <li role="presentation"><a href="/job-openings"onclick="alert('these dont work yet'); return false;">Job Openings</a></li>
-                <li role="presentation"><a href="/applicants" onclick="alert('these dont work yet'); return false;">Applicants</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+@extends('layouts/1column')
+
+@section('content')
+
 <section>
     <div class="container">
         <div class="col-sm-6 col-sm-offset-3">
@@ -62,7 +38,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>&cir; </td>
+                        <td>&check; </td>
                         <td>
                             Create a Migration, Model, and Controller for our
                             <a href="#job_opening">Job Opening</a>
@@ -70,7 +46,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>&cir;</td>
+                        <td>&check;</td>
                         <td>
                             Create a Migration, Model, and Controller for our
                             <a href="#applicant">Applicant</a>
@@ -78,21 +54,21 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>&cir;</td>
+                        <td>&check;</td>
                         <td>
                             Create a bootstrap page to add/edit/delete/view Job Postings. <br/>
                             <a target="_blank" href="/images/mockup.jpg">ROUGH SKETCH</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>&cir;</td>
+                        <td>&check;</td>
                         <td>
                             Create a bootstrap page to add/edit/delete/view Applicants. <br>
                             <a target="_blank" href="/images/mockup.jpg">SAME ROUGH SKETCH</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>&cir;</td>
+                        <td>&check;</td>
                         <td>
                             Create a database seed that creates a record for the Full Stack Developer
                             position. Also create a seed that enters you as an applicant.
@@ -102,7 +78,7 @@
                         <td colspan="2"><b style="color:green">BONUS POINTS!</b></td>
                     </tr>
                     <tr>
-                        <td>&cir;</td>
+                        <td>&check;</td>
                         <td>
                             If you really want to be cool, you can use a front end MV* framework
                             such as Angular or VueJS to control the forms &amp; tables asynchronously.
@@ -167,6 +143,4 @@ Applicant
     </div>
 </section>
 
-
-</body>
-</html>
+@stop

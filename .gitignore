@@ -4,3 +4,6 @@ Homestead.yaml
 Homestead.json
 .env
 .idea
+npm-debug.log
+public/css/*
+public/js/*
